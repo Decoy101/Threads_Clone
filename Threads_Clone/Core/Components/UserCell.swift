@@ -10,16 +10,11 @@ import SwiftUI
 struct UserCell: View {
     var body: some View {
         HStack{
-            Image("le-clarc")
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .frame(width:50,height:40)
-                .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
-            
+            CircularProfileImageView()
             VStack(alignment: .leading){
                 Text("leclarc")
                     .fontWeight(.semibold)
-                Text(" Le Clarc")
+                Text("Le Clarc")
             }
             .font(.footnote)
             Spacer()
