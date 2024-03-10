@@ -8,8 +8,8 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var loginID: String = ""
-    @State var loginPassword: String = ""
+    @StateObject var vm = LoginViewModel()
+    
     var body: some View {
          NavigationStack{
             VStack{
@@ -19,9 +19,9 @@ struct LoginView: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 100)
                 VStack{
-                    TextField("Enter you email",text: $loginID)
+                    TextField("Enter you email",text: $vm.email)
                         .modifier(ThreadsTextFieldModifier())
-                    SecureField("Enter you password",text: $loginPassword)
+                    SecureField("Enter you password",text: $vm.password)
                         .modifier(ThreadsTextFieldModifier())
                 }
                 NavigationLink{
@@ -37,7 +37,11 @@ struct LoginView: View {
                     .padding(.vertical,10)
                 
             }
-                Button(action:{}){
+                Button(action:{
+                    Task{
+                        try await vm.loginUser()
+                    }
+                }){
                     Text("Login")
                         .modifier(ThreadsButtonModifier())
                         
