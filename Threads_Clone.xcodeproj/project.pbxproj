@@ -39,6 +39,9 @@
 		6791BF4D2B9CC4EE003AC7E2 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791BF4C2B9CC4EE003AC7E2 /* AuthService.swift */; };
 		6791BF512B9DAE48003AC7E2 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791BF502B9DAE48003AC7E2 /* ContentViewModel.swift */; };
 		6791BF532B9DE079003AC7E2 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791BF522B9DE079003AC7E2 /* LoginViewModel.swift */; };
+		6791BF552B9DE716003AC7E2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791BF542B9DE716003AC7E2 /* User.swift */; };
+		6791BF572B9DEBD1003AC7E2 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791BF562B9DEBD1003AC7E2 /* UserService.swift */; };
+		6791BF5A2B9DED53003AC7E2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6791BF592B9DED53003AC7E2 /* ProfileViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +70,9 @@
 		6791BF4C2B9CC4EE003AC7E2 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		6791BF502B9DAE48003AC7E2 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
 		6791BF522B9DE079003AC7E2 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		6791BF542B9DE716003AC7E2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		6791BF562B9DEBD1003AC7E2 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		6791BF592B9DED53003AC7E2 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				6791BF092B9C7882003AC7E2 /* ProfileThreadFilter.swift */,
+				6791BF542B9DE716003AC7E2 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -178,6 +185,7 @@
 		6791BEE32B9B93D7003AC7E2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				6791BF562B9DEBD1003AC7E2 /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -263,6 +271,7 @@
 		6791BEFF2B9C53FB003AC7E2 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				6791BF582B9DED47003AC7E2 /* ViewModel */,
 				6791BF0C2B9C8051003AC7E2 /* EditProfile */,
 				6791BF0B2B9C8045003AC7E2 /* View */,
 			);
@@ -323,6 +332,14 @@
 			isa = PBXGroup;
 			children = (
 				6791BF502B9DAE48003AC7E2 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		6791BF582B9DED47003AC7E2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				6791BF592B9DED53003AC7E2 /* ProfileViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -418,9 +435,11 @@
 				6791BF512B9DAE48003AC7E2 /* ContentViewModel.swift in Sources */,
 				6791BEF52B9C53A9003AC7E2 /* FeedView.swift in Sources */,
 				6791BF0A2B9C7882003AC7E2 /* ProfileThreadFilter.swift in Sources */,
+				6791BF572B9DEBD1003AC7E2 /* UserService.swift in Sources */,
 				6791BF4D2B9CC4EE003AC7E2 /* AuthService.swift in Sources */,
 				6791BEEF2B9C4DED003AC7E2 /* ThreadsButtonModifier.swift in Sources */,
 				6791BF082B9C7752003AC7E2 /* CircularProfileImageView.swift in Sources */,
+				6791BF552B9DE716003AC7E2 /* User.swift in Sources */,
 				6791BEE82B9B9420003AC7E2 /* LoginView.swift in Sources */,
 				6791BF012B9C5409003AC7E2 /* ProfileView.swift in Sources */,
 				6791BF062B9C75C5003AC7E2 /* UserCell.swift in Sources */,
@@ -431,6 +450,7 @@
 				6791BEF22B9C5221003AC7E2 /* ThreadsTabView.swift in Sources */,
 				6791BED02B9B9373003AC7E2 /* Threads_CloneApp.swift in Sources */,
 				6791BEEA2B9C4974003AC7E2 /* RegistrationView.swift in Sources */,
+				6791BF5A2B9DED53003AC7E2 /* ProfileViewModel.swift in Sources */,
 				6791BF532B9DE079003AC7E2 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
